@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Página de perfil de Hugo Alberto Torrent — TP1 Laboratorio de Computación." />
+  <title>Hugo Torrent | TP1</title>
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+
+  <!-- ══ NAV ══ -->
+  <nav class="navbar" role="navigation" aria-label="Menú principal">
+    <div class="navbar__inner">
+      <a href="index.html" class="navbar__logo">TP1-EQUIPO</a>
+
+      <button class="navbar__toggle" id="navToggle" aria-label="Abrir menú" aria-expanded="false">
+        <span></span><span></span><span></span>
+      </button>
+
+      <ul class="navbar__links" id="navLinks" role="list">
+        <li><a href="index.html">inicio</a></li>
+        <li><a href="hugo.html" class="active">hugo</a></li>
+        <li><a href="luciano.html">luciano</a></li>
+        <li><a href="diego.html">diego</a></li>
+        <li><a href="bitacora.html">bitacora</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <!-- ══ PERFIL ══ -->
+  <main>
+    <div class="container">
+      <div class="profile">
+
+        <!-- Columna izquierda -->
+        <aside>
+          <div class="profile__header">
+
+            <div class="profile__avatar" id="profileAvatar" aria-label="Avatar de Hugo Torrent">
+              <img src="img/hugo_pixel.png" alt="Hugo Torrent">
+            </div>
+
+            <div>
+              <h1 class="profile__name">hugo_torrent</h1>
+
+              <div class="profile__meta">
+                <span class="profile__meta-item">
+                  <span class="icon">📍</span> planeta marte
+                </span>
+                <span class="profile__meta-item">
+                  <span class="icon">🎂</span>
+                  <span id="profileAge">723 años</span>
+                </span>
+                <span class="profile__meta-item">
+                  <span class="icon">💼</span> Desarrollo de Software
+                </span>
+              </div>
+
+              <div style="margin-top:1rem; display:flex; gap:0.5rem; flex-wrap:wrap; justify-content:center;">
+                <span class="badge">Dev</span>
+                <span class="badge">Render3D</span>
+                <span class="badge">Foto</span>
+              </div>
+            </div>
+
+          </div>
+        </aside>
+
+        <!-- Columna derecha -->
+        <div>
+
+          <!-- Habilidades -->
+          <section class="skills-section" id="skillsSection" aria-labelledby="skillsTitle">
+            <div class="skills-section__header" id="skillsHeader">
+              <h2 class="skills-section__title" id="skillsTitle">habilidades</h2>
+              <button class="skills-toggle-btn" id="skillsToggleBtn" aria-expanded="true" aria-controls="skillsList">
+                [ocultar]
+              </button>
+            </div>
+
+            <ul class="skills-list" id="skillsList" role="list">
+              <li class="skill-item">
+                <span class="skill-icon">💻</span>
+                Desarrollo de software
+              </li>
+              <li class="skill-item">
+                <span class="skill-icon">🏛️</span>
+                Renderizado arquitectónico
+              </li>
+              <li class="skill-item">
+                <span class="skill-icon">📷</span>
+                Fotografía
+              </li>
+              <li class="skill-item">
+                <span class="skill-icon">🔧</span>
+                Resolución de problemas técnicos hardware/software
+              </li>
+            </ul>
+          </section>
+
+          <!-- Películas -->
+          <section class="card" style="margin-top:1.5rem;" aria-labelledby="moviesTitle">
+            <h2 class="section-title" id="moviesTitle">peliculas/series_favoritas</h2>
+            <div class="media-grid">
+
+              <div class="media-card">
+                <div class="media-card__cover"><img src="./img/hugo_img/bsc.png" alt="Serie Better Call Saul" class="media-card__cover"></div>
+                <p class="media-card__title">Better Call Saul</p>
+                <p class="media-card__sub">Año 2017 · Director Vince Gilligan y Peter Gould</p>
+              </div>
+
+              <div class="media-card">
+                <div class="media-card__cover"><img src="./img/hugo_img/mr.png" alt="Película MR robot" class="media-card__cover"></div>
+                <p class="media-card__title">MR robot</p>
+                <p class="media-card__sub">Año 2020 · Director John Doe</p>
+              </div>
+
+              <div class="media-card">
+                <div class="media-card__cover"><img src="./img/hugo_img/sa.png" alt="Película El señor de los anillos" class="media-card__cover"></div>
+                <p class="media-card__title">El señor de los anillos</p>
+                <p class="media-card__sub">Año 2001 · Director Peter Jackson</p>
+              </div>
+
+            </div>
+          </section>
+
+          <!-- Discos -->
+          <section class="card" style="margin-top:1.5rem;" aria-labelledby="albumsTitle">
+            <h2 class="section-title" id="albumsTitle">discos_favoritos</h2>
+            <div class="media-grid">
+
+              <div class="media-card">
+                <div class="media-card__cover"><img src="./img/hugo_img/artaud.png" alt="Álbum Artaud (Pescado Rabioso)" class="media-card__cover"></div>
+                <p class="media-card__title">Artaud (Pescado Rabioso)</p>
+                <p class="media-card__sub">Artista luis alberto spinetta · Año 1973</p>
+              </div>
+
+              <div class="media-card">
+                <div class="media-card__cover"><img src="./img/hugo_img/brap.png" alt="Álbum An Evening with Silk Sonic" class="media-card__cover"></div>
+                <p class="media-card__title"> An Evening with Silk Sonic</p>
+                <p class="media-card__sub">Artista Silk Sonic · Año 2021</p>
+              </div>
+
+              <div class="media-card">
+                <div class="media-card__cover"><img src="./img/hugo_img/pl.png" alt="Álbum Paralelogramos - Linda Perhacs" class="media-card__cover"></div>
+                <p class="media-card__title">Paralelogramos - Linda Perhacs</p>
+                <p class="media-card__sub">Artista Linda Perhacs · Año 1970</p>
+              </div>
+
+            </div>
+          </section>
+
+        </div><!-- /columna derecha -->
+      </div><!-- /profile -->
+    </div><!-- /container -->
+  </main>
+
+  <!-- ══ FOOTER ═══════════════════════════════════════════════ -->
+  <footer class="footer">
+    <div class="container" style="padding-block:0;">
+      <p>TP1 &copy; <span id="footerYear"></span> — Proyecto Web en Equipo · IFTS 29</p>
+      <p style="margin-top:0.4rem;">
+        <a href="index.html">./inicio</a> ·
+        <a href="hugo.html">./hugo</a> ·
+        <a href="luciano.html">./luciano</a> ·
+        <a href="diego.html">./diego</a> ·
+        <a href="bitacora.html">./bitacora</a>
+      </p>
+    </div>
+  </footer>
+
+  <script src="js/main.js"></script>
+</body>
+</html>

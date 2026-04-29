@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="TP1 — Portada del equipo. Presentación de integrantes y enlaces a páginas individuales." />
+  <title>TP1 | Portada del Equipo</title>
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+
+  <!-- ══ NAV ══════════════════════════════════════════════════ -->
+  <nav class="navbar" role="navigation" aria-label="Menú principal">
+    <div class="navbar__inner">
+      <a href="index.html" class="navbar__logo">TP1-EQUIPO N° 18</a>
+
+      <button class="navbar__toggle" id="navToggle" aria-label="Abrir menú" aria-expanded="false">
+        <span></span><span></span><span></span>
+      </button>
+
+      <ul class="navbar__links" id="navLinks" role="list">
+        <li><a href="index.html" class="active">inicio</a></li>
+        <li><a href="hugo.html">hugo</a></li>
+        <li><a href="luciano.html">luciano</a></li>
+        <li><a href="diego.html">diego</a></li>
+        <li><a href="bitacora.html">bitacora</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <!-- ══ HERO ══ -->
+  <header class="hero" id="inicio">
+    <div>
+      <p class="hero__eyebrow">Trabajo Práctico 1 — Proyecto Web en Equipo</p>
+      <h1 class="hero__title">GRUPO N° 18</h1>
+      <p class="hero__subtitle">
+        &gt; Initializing presentation protocol... Somos el Grupo N° 18.<br>
+        &gt; Desarrollamos esta plataforma para el TP1 aplicando HTML, CSS y Vanilla JS.<br>
+        &gt; Objetivo: construir una interfaz responsive, semántica y sin frameworks.
+      </p>
+
+      <div style="display:flex; gap:1rem; justify-content:center; flex-wrap:wrap;">
+        <button class="btn btn--primary" id="btnTeamMessage">
+          init_saludo.sh
+        </button>
+        <a href="#integrantes" class="btn btn--ghost">ls --integrantes</a>
+      </div>
+
+      <!-- Caja dinámica JS -->
+      <div class="message-box" id="teamMessageBox" role="alert" aria-live="polite"></div>
+    </div>
+  </header>
+
+  <!-- ══ INTEGRANTES ══ -->
+  <main>
+    <section class="section" id="integrantes">
+      <div class="container">
+        <h2 class="section-title">integrantes</h2>
+        <p class="text-dim" style="margin-bottom:1.5rem;">
+          &gt; cat README.md | grep integrante
+        </p>
+
+        <div class="team-grid">
+
+          <!-- Hugo Torrent -->
+          <article class="member-card">
+            <div class="member-card__avatar" aria-label="Avatar de Hugo Torrent">
+              <img src="img/hugo_pixel.png" alt="Hugo Torrent">
+            </div>
+            <h3 class="member-card__name">Hugo Alberto Torrent</h3>
+            <p class="text-dim">Dev · San Juan, AR</p>
+            <a href="hugo.html" class="member-card__link">open hugo.html →</a>
+          </article>
+
+          <!-- Luciano Reguera -->
+          <article class="member-card">
+            <div class="member-card__avatar" aria-label="Avatar de Luciano Reguera">
+              <img src="img/luciano_pixel.png" alt="Luciano Reguera">
+            </div>
+            <h3 class="member-card__name">Luciano Reguera</h3>
+            <p class="text-dim">Dev · Catamarca, AR</p>
+            <a href="luciano.html" class="member-card__link">open luciano.html →</a>
+          </article>
+
+          <!-- Diego Gonzalez -->
+          <article class="member-card">
+            <div class="member-card__avatar" aria-label="Avatar de Diego Gonzalez">
+              <img src="img/diego_pixel.png" alt="Diego Gonzalez">
+            </div>
+            <h3 class="member-card__name">Diego Gonzalez</h3>
+            <p class="text-dim">Dev · Europa, AR</p>
+            <a href="diego.html" class="member-card__link">open diego.html →</a>
+          </article>
+
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- ══ FOOTER ══ -->
+  <footer class="footer">
+    <div class="container" style="padding-block:0;">
+      <p>TP1 &copy; <span id="footerYear"></span> — Proyecto Web en Equipo · IFTS 29</p>
+      <p style="margin-top:0.4rem;">
+        <a href="index.html">./inicio</a> ·
+        <a href="hugo.html">./hugo</a> ·
+        <a href="luciano.html">./luciano</a> ·
+        <a href="diego.html">./diego</a> ·
+        <a href="bitacora.html">./bitacora</a>
+      </p>
+    </div>
+  </footer>
+
+  <script src="js/main.js"></script>
+</body>
+</html>

@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description"
+    content="Bitácora del proyecto TP1 — Registro de decisiones de diseño, dificultades y cambios de implementación." />
+  <title>Bitácora | TP1</title>
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+
+<body>
+
+  <!-- ══ NAV ══════════════════════════════════════════════════ -->
+  <nav class="navbar" role="navigation" aria-label="Menú principal">
+    <div class="navbar__inner">
+      <a href="index.html" class="navbar__logo">TP1-EQUIPO</a>
+
+      <button class="navbar__toggle" id="navToggle" aria-label="Abrir menú" aria-expanded="false">
+        <span></span><span></span><span></span>
+      </button>
+
+      <ul class="navbar__links" id="navLinks" role="list">
+        <li><a href="index.html">inicio</a></li>
+        <li><a href="hugo.html">hugo</a></li>
+        <!-- PLACEHOLDER: agregar enlace por cada integrante -->
+        <li><a href="bitacora.html" class="active">bitacora</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <!-- ══ HEADER ═══════════════════════════════════════════════ -->
+  <header style="padding: 4rem 0 2rem; text-align: center;">
+    <div class="container" style="padding-block:0;">
+      <p class="hero__eyebrow">TP1 — Registro de Proceso</p>
+      <h1 class="hero__title" style="font-size:clamp(1.8rem,6vw,3rem);">BITACORA.LOG</h1>
+      <p class="hero__subtitle">
+        &gt; Registro cronológico de decisiones de diseño,<br>
+        &gt; dificultades encontradas y cambios de implementación.
+      </p>
+    </div>
+  </header>
+
+  <!-- ══ CONTENIDO ════════════════════════════════════════════ -->
+  <main>
+    <div class="container">
+
+      <!-- Entrada 1 -->
+      <article class="log-entry">
+        <p class="log-entry__date">Fecha: DD/MM/AAAA</p>
+        <h2 class="log-entry__title">Decisiones de Diseño</h2>
+        <p class="log-entry__body">
+          ["Optamos por una estética inspirada en terminales de consola (estilo hacker/cyberpunk) utilizando un fondo
+          oscuro (#0a0a0a) y acentos en verde neón (#00ff41). Para reforzar la temática, implementamos la tipografía
+          monoespaciada 'JetBrains Mono' y agregamos animaciones CSS como el parpadeo del cursor y un efecto de escaneo
+          CRT en la portada. Decidimos no usar frameworks externos para tener control total sobre el código base."]
+        </p>
+      </article>
+
+      <!-- Entrada 2 -->
+      <article class="log-entry">
+        <p class="log-entry__date">Fecha: DD/MM/AAAA</p>
+        <h2 class="log-entry__title">Dificultades Encontradas</h2>
+        <p class="log-entry__body">
+          ["Uno de los mayores desafíos fue lograr que el menú hamburguesa se animara correctamente convirtiéndose en
+          una 'X' utilizando únicamente JavaScript nativo (Vanilla JS) y transformaciones CSS. Además, al estructurar la
+          página individual, tuvimos complicaciones con el desborde de contenido en resoluciones de tablet, lo cual
+          resolvimos ajustando las media queries y aplicando overflow: hidden a las tarjetas."]
+        </p>
+      </article>
+
+      <!-- Entrada 3 -->
+      <article class="log-entry">
+        <p class="log-entry__date">Fecha: DD/MM/AAAA</p>
+        <h2 class="log-entry__title">Cambios de Implementación</h2>
+        <p class="log-entry__body">
+          ["En las primeras pruebas planificamos estructurar la página de perfil (hugo.html/luciano.html/diego.html)
+          usando solo Flexbox. Sin
+          however, al probarlo en pantallas de más de 1200px, notamos que CSS Grid nos ofrecía un layout mucho más
+          robusto (grid-template-columns: 320px 1fr), por lo que migramos el contenedor principal a Grid para anclar la
+          tarjeta de perfil a la izquierda."]
+        </p>
+      </article>
+
+      <!-- Entrada 4 -->
+      <article class="log-entry">
+        <p class="log-entry__date">Fecha: DD/MM/AAAA</p>
+        <h2 class="log-entry__title">Uso de Inteligencia Artificial</h2>
+        <p class="log-entry__body">
+          ["Para este proyecto, la IA fue un asistente técnico clave. La utilizamos para el desarrollo de los efectos
+          de diseño temáticos, como las animaciones de parpadeo (flicker) y las líneas de escaneo (scanlines) que
+          definen la estética de terminal del sitio. Asimismo, nos apoyamos en la IA para estructurar parte de la lógica
+          en JavaScript, específicamente en las funciones de interacción dinámica de la portada y el sistema de
+          desplegables en los perfiles. Utilizamos Gemini para el relevamiento final frente a la rúbrica del
+          TP y la redacción técnica. Todo el código resultante fue revisado, comprendido y adaptado manualmente por el
+          equipo para garantizar la autoría del proyecto."]
+        </p>
+      </article>
+
+      <!-- PLACEHOLDER: agregar más entradas -->
+      <div style="text-align:center; margin-top:1.5rem;">
+        <p class="text-dim">&gt; Seguir agregando entradas con <code style="color:#00ff41;">git commit -m "..."</code>
+        </p>
+      </div>
+
+    </div>
+  </main>
+
+  <!-- ══ FOOTER ═══════════════════════════════════════════════ -->
+  <footer class="footer">
+    <div class="container" style="padding-block:0;">
+      <p>TP1 &copy; <span id="footerYear"></span> — Proyecto Web en Equipo · IFTS 29</p>
+      <p style="margin-top:0.4rem;">
+        <a href="index.html">./inicio</a> ·
+        <a href="hugo.html">./hugo</a> ·
+        <a href="luciano.html">./luciano</a> ·
+        <a href="diego.html">./diego</a> ·
+        <a href="bitacora.html">./bitacora</a>
+      </p>
+    </div>
+  </footer>
+
+  <script src="js/main.js"></script>
+</body>
+
+</html>
