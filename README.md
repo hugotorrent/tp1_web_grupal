@@ -102,7 +102,7 @@ Todas las funciones se encuentran en `js/main.js` y se inicializan mediante `ini
 Controla la apertura y cierre del menú de navegación en dispositivos móviles. Al hacer clic, el ícono de tres líneas se transforma en una "X" mediante transformaciones CSS animadas. Al seleccionar un enlace del menú, este se cierra automáticamente.
 
 **📸 Captura:**
-![alt text](img/README/Captura_de_pantalla_menu_hamburguesa.png)
+![alt text](img/README_img/Captura_de_pantalla_menu_hamburguesa.png)
 
 ---
 
@@ -111,7 +111,7 @@ Controla la apertura y cierre del menú de navegación en dispositivos móviles.
 Al hacer clic en el botón `init_saludo.sh` de la portada, se despliega una caja de mensaje con texto de bienvenida. Cada clic sucesivo rota entre 4 mensajes distintos con una animación de `fadeIn`. El botón cambia su etiqueta a `next_message.sh` después del primer clic.
 
 **📸 Captura:**
-![alt text](img/README/Captura_de_pantalla_mensg.png)
+![alt text](img/README_img/Captura_de_pantalla_mensg.png)
 
 ---
 
@@ -120,9 +120,9 @@ Al hacer clic en el botón `init_saludo.sh` de la portada, se despliega una caja
 En la tarjeta de Hugo,Luciano y Diego, el botón `[ocultar]` / `[mostrar]` colapsa o despliega la lista de habilidades. El estado del botón y el atributo `aria-expanded` se actualizan en consecuencia. También se puede activar haciendo clic en el encabezado de la sección.
 
 **📸 Captura:**
-![alt text](img/README/Captura_de_pantalla_d_habilidades.png)
+![alt text](img/README_img/Captura_de_pantalla_d_habilidades.png)
 ---
-![alt text](img/README/Captura_de_pantalla_habilidades.png)
+![alt text](img/README_img/Captura_de_pantalla_habilidades.png)
 
 ---
 
@@ -143,19 +143,19 @@ Escribe el año actual en el footer de forma dinámica usando `new Date().getFul
 ### Portada — `index.html`
 
 **📸 Captura (Desktop — 1200px+):**
-![Captura de pantalla desktop](img/README/Captura_de_pantalla_total.png)
+![Captura de pantalla desktop](img/README_img/Captura_de_pantalla_total.png)
 
 **📸 Captura (Tablet — 900px):**
 
 ---
 
-![Captura de pantalla 900px](img/README/Captura_de_pantalla_900px.png)
+![Captura de pantalla 900px](img/README_img/Captura_de_pantalla_900px.png)
 
 **📸 Captura (Mobile — 400px):**
 
 ---
 
-![Captura de pantalla mobile](img/README/Captura_de_pantalla_mobile.png)
+![Captura de pantalla mobile](img/README_img/Captura_de_pantalla_mobile.png)
 
 ---
 
@@ -165,8 +165,7 @@ Escribe el año actual en el footer de forma dinámica usando `new Date().getFul
 
 ---
 
-![Captura de pantalla bitacora](img/README/Captura_de_pantalla_Bitacora.png)
-
+![Captura de pantalla bitacora](img/README_img/Captura_de_pantalla_Bitacora.png)
 ---
 
 ## Uso de Inteligencia Artificial
