@@ -18,8 +18,8 @@ Este trabajo práctico consiste en un sitio web grupal desarrollado con HTML, CS
 | Nombre | GitHub |
 |---|---|
 | Hugo Alberto Torrent | `https://github.com/hugotorrent` |
-| Luciano Reguera | `https://github.com/diegoale528` |
-| Diego Gonzalez | `https://github.com/lucianoreguera` |
+| Luciano Reguera | `https://github.com/lucianoreguera` |
+| Diego Gonzalez | `https://github.com/diegoale528` |
 
 ---
 
@@ -87,9 +87,15 @@ tp1-web/
   - 🔗 [Ver en Google Fonts](https://fonts.google.com/specimen/JetBrains+Mono)
   - Pesos utilizados: 300, 400, 500, 700
 
-### Avatares
+### Avatares del Equipo
 
 - Los **avatares** de los tres integrantes son imágenes de estilo pixel art generadas con Inteligencia Artificial, respetando la privacidad de cada miembro al no utilizar fotografías reales.
+
+| Integrante | Avatar |
+| :--- | :--- |
+| Hugo Alberto Torrent | ![Hugo](img/hugo_pixel.png) |
+| Luciano Reguera | ![Luciano](img/luciano_pixel.png) |
+| Diego Gonzalez | ![Diego](img/Diego_pixel.png) |
 
 ---
 
