@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Página de perfil de Luciano Reguera — TP1 Laboratorio de Computación." />
+  <title>Luciano Reguera | TP1</title>
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+
+<body>
+
+  <!-- ══ NAV ══ -->
+  <nav class="navbar" role="navigation" aria-label="Menú principal">
+    <div class="navbar__inner">
+      <a href="index.html" class="navbar__logo">TP1-EQUIPO</a>
+
+      <button class="navbar__toggle" id="navToggle" aria-label="Abrir menú" aria-expanded="false">
+        <span></span><span></span><span></span>
+      </button>
+
+      <ul class="navbar__links" id="navLinks" role="list">
+        <li><a href="index.html">inicio</a></li>
+        <li><a href="hugo.html">hugo</a></li>
+        <li><a href="luciano.html" class="active">luciano</a></li>
+        <li><a href="diego.html">diego</a></li>
+        <li><a href="bitacora.html">bitacora</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <!-- ══ PERFIL ══ -->
+  <main>
+    <div class="container">
+      <div class="profile">
+
+        <!-- Columna izquierda -->
+        <aside>
+          <div class="profile__header">
+
+            <div class="profile__avatar" id="profileAvatar" aria-label="Avatar de Luciano Reguera">
+              <img src="img/luciano_pixel.png" alt="Luciano Reguera">
+            </div>
+
+            <div>
+              <h1 class="profile__name">luciano_dev</h1>
+
+              <div class="profile__meta">
+                <span class="profile__meta-item">
+                  <span class="icon">📍</span> Catamarca, Argentina
+                </span>
+                <span class="profile__meta-item">
+                  <span class="icon">💼</span> Estudiante de Desarrollo Web
+                </span>
+              </div>
+
+              <div style="margin-top:1rem; display:flex; gap:0.5rem; flex-wrap:wrap; justify-content:center;">
+                <span class="badge">HTML</span>
+                <span class="badge">CSS</span>
+                <span class="badge">JS</span>
+                <span class="badge">Java</span>
+              </div>
+
+              <h4 class="section-title" style="margin-top:1rem;">sobre mí</h4>
+              <p>Estudiante apasionado de desarrollo web, enfocado en convertir conceptos complejos en interfaces simples y prácticas. Me interesa el diseño centrado en el usuario, el código limpio y el aprendizaje continuo. Mi objetivo: crecer como profesional full-stack y contribuir en proyectos con impacto real.</p>
+            </div>
+
+          </div>
+        </aside>
+
+        <!-- Columna derecha -->
+        <div>
+
+          <!-- Habilidades -->
+          <section class="skills-section" id="skillsSection" aria-labelledby="skillsTitle">
+            <div class="skills-section__header" id="skillsHeader">
+              <h2 class="skills-section__title" id="skillsTitle">habilidades</h2>
+              <button class="skills-toggle-btn" id="skillsToggleBtn" aria-expanded="true" aria-controls="skillsList">
+                [ocultar]
+              </button>
+            </div>
+
+            <ul class="skills-list" id="skillsList" role="list">
+              <li class="skill-item">
+                <span class="skill-icon">🌐</span>
+                front end: HTML5 semántico, CSS3 (Flexbox/Grid)
+              </li>
+              <li class="skill-item">
+                <span class="skill-icon">⚡</span>
+                JavaScript (ES6+) y TypeScript
+              </li>
+              <li class="skill-item">
+                <span class="skill-icon">🖥️</span>
+                back end: Node.js, Express, NestJS, Java
+              </li>
+              <li class="skill-item">
+                <span class="skill-icon">☕</span>
+                bases de datos NoSQL (MongoDB)
+              </li>
+              <li class="skill-item">
+                <span class="skill-icon">🗄️</span>
+                bases de datos SQL (PostgreSQL, MySQL)
+              </li>
+              <li class="skill-item">
+                <span class="skill-icon">🔧</span>
+                Git y GitHub
+              </li>
+            </ul>
+          </section>
+
+          <!-- Proyectos -->
+          <section class="card" style="margin-top:1.5rem;" aria-labelledby="projectsTitle">
+            <h2 class="section-title" id="projectsTitle">mis_proyectos</h2>
+            <div class="media-grid">
+
+              <article class="media-card">
+                <div class="media-card__cover">
+                  <img src="img/luciano_img/proyecto1.png" alt="Landing Page E-commerce">
+                </div>
+                <p class="media-card__title">landing page e-commerce</p>
+                <p class="media-card__sub">diseño responsivo · carrito de compras · catálogo filtrable</p>
+              </article>
+
+              <article class="media-card">
+                <div class="media-card__cover">
+                  <img src="img/luciano_img/proyecto2.png" alt="Task Management App">
+                </div>
+                <p class="media-card__title">task management app</p>
+                <p class="media-card__sub">local storage · drag & drop · sistema de prioridades</p>
+              </article>
+
+              <article class="media-card">
+                <div class="media-card__cover">
+                  <img src="img/luciano_img/proyecto3.png" alt="Analytics Dashboard">
+                </div>
+                <p class="media-card__title">analytics dashboard</p>
+                <p class="media-card__sub">APIs públicas · visualizaciones meteorológicas en tiempo real</p>
+              </article>
+
+            </div>
+          </section>
+
+          <!-- Películas favoritas -->
+          <section class="card" style="margin-top:1.5rem;" aria-labelledby="moviesTitle">
+            <h2 class="section-title" id="moviesTitle">peliculas_favoritas</h2>
+            <div class="media-grid">
+
+              <div class="media-card">
+                <div class="media-card__cover">
+                  <img src="img/luciano_img/una_mente_brillante.png" alt="A Beautiful Mind">
+                </div>
+                <p class="media-card__title">A Beautiful Mind</p>
+                <p class="media-card__sub">Año 2001 · Director Ron Howard</p>
+              </div>
+
+              <div class="media-card">
+                <div class="media-card__cover">
+                  <img src="img/luciano_img/star_wars.png" alt="El Imperio Contraataca">
+                </div>
+                <p class="media-card__title">Star Warts - El Imperio Contraataca</p>
+                <p class="media-card__sub">Año 1980 · Director Irvin Kershner</p>
+              </div>
+
+              <div class="media-card">
+                <div class="media-card__cover">
+                  <img src="img/luciano_img/volver_al_futuro.png" alt="Volver al Futuro">
+                </div>
+                <p class="media-card__title">Volver al Futuro</p>
+                <p class="media-card__sub">Año 1985 · Director Robert Zemeckis</p>
+              </div>
+
+            </div>
+          </section>
+
+          <!-- Contacto -->
+          <section class="card" style="margin-top:1.5rem;" id="contacto" aria-labelledby="contactTitle">
+            <h2 class="section-title" id="contactTitle">contacto</h2>
+            <form action="#" style="display:flex; flex-direction:column; gap:1rem;">
+              <input type="text" placeholder="Nombre" required>
+              <input type="text" placeholder="Apellido" required>
+              <input type="email" placeholder="Email" required>
+              <input type="tel" placeholder="Teléfono">
+              <textarea placeholder="Mensaje" rows="4"></textarea>
+              <button type="submit" class="btn btn--primary">enviar mensaje</button>
+            </form>
+          </section>
+
+        </div><!-- /columna derecha -->
+      </div><!-- /profile -->
+    </div><!-- /container -->
+  </main>
+
+  <!-- ══ FOOTER ══ -->
+  <footer class="footer">
+    <div class="container" style="padding-block:0;">
+      <p>TP1 &copy; <span id="footerYear"></span> — Proyecto Web en Equipo · IFTS 29</p>
+      <p style="margin-top:0.4rem;">
+        <a href="index.html">./inicio</a> ·
+        <a href="hugo.html">./hugo</a> ·
+        <a href="luciano.html">./luciano</a> ·
+        <a href="diego.html">./diego</a> ·
+        <a href="bitacora.html">./bitacora</a>
+      </p>
+    </div>
+  </footer>
+
+  <script src="js/main.js"></script>
+</body>
+
+</html>
